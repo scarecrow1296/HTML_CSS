@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* CSS Document for Images slideshow */
+
+body
+{
+    background-color: rgb(32, 32, 31);
+    margin: 0px;
+    padding: 0px;
+}
+
+h1
+{
+    font-size: 3vw;
+    line-height: 1.5;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.main
+{
+    width: 70%;
+    height: 600px;
+    position: absolute;
+    left: 15%; 
+    top: 15%;
+    /* transform: translate(-50%, -50%); */
+    background-image: url('Mehul1.jpg');
+    background-size: 100% 100%;
+    box-shadow: 5px 8px 20px white;
+    animation: slider 12s infinite ease-in;
+}
+
+@keyframes slider
+{
+    0%{background-image: url('Mehul1.jpg');}
+    35%{background-image: url('Mehul8.jpg');}
+    66%{background-image: url('Mehul5.jpg');}
+}
